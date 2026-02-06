@@ -7,6 +7,33 @@
     'use strict';
 
     // ============================================
+    // THEME TOGGLE FUNCTIONALITY
+    // ============================================
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+    
+    // Get saved theme from localStorage or default to 'dark'
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', currentTheme);
+    
+    // Theme toggle handler
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            // Add animation class for smooth transition
+            html.classList.add('theme-transitioning');
+            setTimeout(() => {
+                html.classList.remove('theme-transitioning');
+            }, 300);
+        });
+    }
+
+    // ============================================
     // NAVBAR SCROLL EFFECT
     // ============================================
     const navbar = document.getElementById('navbar');

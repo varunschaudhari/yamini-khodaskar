@@ -23,11 +23,29 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="theme-icon sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="theme-icon moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -315,21 +333,21 @@
                                 <rect width="400" height="300" fill="#2a2a2a"/>
                                 <defs>
                                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#ff0066;stop-opacity:0.1" />
-                                        <stop offset="100%" style="stop-color:#ff0066;stop-opacity:0.3" />
+                                        <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:0.1" />
+                                        <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:0.3" />
                                     </linearGradient>
                                 </defs>
                                 <rect width="400" height="300" fill="url(#grad1)"/>
                                 <g transform="translate(200, 150)">
-                                    <circle cx="0" cy="0" r="60" fill="rgba(255, 0, 102, 0.2)"/>
-                                    <svg x="-30" y="-30" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#ff0066" stroke-width="2">
+                                    <circle cx="0" cy="0" r="60" fill="rgba(30, 58, 138, 0.2)"/>
+                                    <svg x="-30" y="-30" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
                                         <line x1="18" y1="20" x2="18" y2="10"></line>
                                         <line x1="12" y1="20" x2="12" y2="4"></line>
                                         <line x1="6" y1="20" x2="6" y2="14"></line>
                                     </svg>
                                 </g>
-                                <path d="M50 50 Q200 100 350 50" stroke="rgba(255, 0, 102, 0.3)" stroke-width="2" fill="none"/>
-                                <path d="M50 250 Q200 200 350 250" stroke="rgba(255, 0, 102, 0.3)" stroke-width="2" fill="none"/>
+                                <path d="M50 50 Q200 100 350 50" stroke="rgba(30, 58, 138, 0.3)" stroke-width="2" fill="none"/>
+                                <path d="M50 250 Q200 200 350 250" stroke="rgba(30, 58, 138, 0.3)" stroke-width="2" fill="none"/>
                             </svg>
                         </div>
                         <div class="project-overlay">
@@ -353,20 +371,20 @@
                                 <rect width="400" height="300" fill="#2a2a2a"/>
                                 <defs>
                                     <linearGradient id="gradTraffic" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#ff0066;stop-opacity:0.1" />
-                                        <stop offset="100%" style="stop-color:#ff0066;stop-opacity:0.3" />
+                                        <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:0.1" />
+                                        <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:0.3" />
                                     </linearGradient>
                                 </defs>
                                 <rect width="400" height="300" fill="url(#gradTraffic)"/>
                                 <g transform="translate(200, 150)">
-                                    <circle cx="0" cy="0" r="60" fill="rgba(255, 0, 102, 0.2)"/>
-                                    <svg x="-30" y="-30" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#ff0066" stroke-width="2">
+                                    <circle cx="0" cy="0" r="60" fill="rgba(30, 58, 138, 0.2)"/>
+                                    <svg x="-30" y="-30" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
                                         <path d="M3 12h18M3 6h18M3 18h18"></path>
                                         <path d="M6 3v18M18 3v18"></path>
                                     </svg>
                                 </g>
-                                <path d="M50 80 L150 80 L200 120 L250 80 L350 80" stroke="rgba(255, 0, 102, 0.4)" stroke-width="3" fill="none" stroke-linecap="round"/>
-                                <path d="M50 220 L150 220 L200 180 L250 220 L350 220" stroke="rgba(255, 0, 102, 0.4)" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M50 80 L150 80 L200 120 L250 80 L350 80" stroke="rgba(30, 58, 138, 0.4)" stroke-width="3" fill="none" stroke-linecap="round"/>
+                                <path d="M50 220 L150 220 L200 180 L250 220 L350 220" stroke="rgba(30, 58, 138, 0.4)" stroke-width="3" fill="none" stroke-linecap="round"/>
                             </svg>
                         </div>
                         <div class="project-overlay">
@@ -390,24 +408,24 @@
                                 <rect width="400" height="300" fill="#2a2a2a"/>
                                 <defs>
                                     <linearGradient id="gradArbitration" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#ff0066;stop-opacity:0.1" />
-                                        <stop offset="100%" style="stop-color:#ff0066;stop-opacity:0.3" />
+                                        <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:0.1" />
+                                        <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:0.3" />
                                     </linearGradient>
                                 </defs>
                                 <rect width="400" height="300" fill="url(#gradArbitration)"/>
                                 <g transform="translate(200, 150)">
-                                    <circle cx="0" cy="0" r="60" fill="rgba(255, 0, 102, 0.2)"/>
-                                    <svg x="-30" y="-30" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#ff0066" stroke-width="2">
+                                    <circle cx="0" cy="0" r="60" fill="rgba(30, 58, 138, 0.2)"/>
+                                    <svg x="-30" y="-30" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" stroke-width="2">
                                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
                                         <polyline points="14 2 14 8 20 8"></polyline>
                                         <line x1="16" y1="13" x2="8" y2="13"></line>
                                         <line x1="16" y1="17" x2="8" y2="17"></line>
                                     </svg>
                                 </g>
-                                <rect x="80" y="60" width="240" height="180" rx="8" fill="rgba(255, 0, 102, 0.1)" stroke="rgba(255, 0, 102, 0.3)" stroke-width="2"/>
-                                <line x1="100" y1="100" x2="300" y2="100" stroke="rgba(255, 0, 102, 0.3)" stroke-width="2"/>
-                                <line x1="100" y1="140" x2="300" y2="140" stroke="rgba(255, 0, 102, 0.3)" stroke-width="2"/>
-                                <line x1="100" y1="180" x2="300" y2="180" stroke="rgba(255, 0, 102, 0.3)" stroke-width="2"/>
+                                <rect x="80" y="60" width="240" height="180" rx="8" fill="rgba(30, 58, 138, 0.1)" stroke="rgba(30, 58, 138, 0.3)" stroke-width="2"/>
+                                <line x1="100" y1="100" x2="300" y2="100" stroke="rgba(30, 58, 138, 0.3)" stroke-width="2"/>
+                                <line x1="100" y1="140" x2="300" y2="140" stroke="rgba(30, 58, 138, 0.3)" stroke-width="2"/>
+                                <line x1="100" y1="180" x2="300" y2="180" stroke="rgba(30, 58, 138, 0.3)" stroke-width="2"/>
                             </svg>
                         </div>
                         <div class="project-overlay">
@@ -1034,7 +1052,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Yamini Prashant Khodaskar. All rights reserved.</p>
+            <p>&copy; 2026 Yamini Prashant Khodaskar. All rights reserved.</p>
         </div>
     </footer>
 
