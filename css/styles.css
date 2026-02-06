@@ -18,6 +18,7 @@
     --color-text: #ffffff;                /* White - Main Text */
     --color-text-light: #b3b3b3;          /* Light Gray - Subtitles */
     --color-text-muted: #808080;          /* Medium Gray - Muted Text */
+    --color-text-nav: #ffffff;            /* Navigation links - White for maximum visibility */
     --color-bg: #1a1a1a;                  /* Dark Black Background */
     --color-bg-light: #2a2a2a;            /* Dark Gray - Card Backgrounds */
     --color-bg-dark: #1f1f1f;             /* Slightly Lighter Black */
@@ -180,8 +181,16 @@ button:focus-visible,
 }
 
 .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(26, 26, 26, 0.98);
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.navbar.scrolled .nav-menu a {
+    color: #ffffff;
+}
+
+.navbar.scrolled .logo {
+    color: var(--color-primary);
 }
 
 .nav-content {
@@ -211,13 +220,14 @@ button:focus-visible,
 }
 
 .nav-menu a {
-    color: var(--color-text);
+    color: #ffffff;
     font-weight: 500;
     font-size: 0.9375rem;
     position: relative;
     padding: 0.5rem 0;
     transition: all var(--transition-fast);
     letter-spacing: -0.01em;
+    opacity: 0.9;
 }
 
 .nav-menu a::after {
@@ -233,15 +243,14 @@ button:focus-visible,
 }
 
 .nav-menu a:hover {
-    color: var(--color-primary);
+    color: #ffffff;
+    opacity: 1;
 }
 
 .nav-menu a.active {
     color: var(--color-primary);
-}
-
-.nav-menu a.active {
-    color: var(--color-primary);
+    font-weight: 600;
+    opacity: 1;
 }
 
 .nav-menu a.active::after {
